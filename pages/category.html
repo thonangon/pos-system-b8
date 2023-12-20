@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="../css/category.css">
+  <script src="../js/cetagory.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <span class="material-symbols-outlined">
+      shopping_cart
+    </span>
+    <h2>POS SYSTEM</h2>
+  </header>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="../index.html"> <span class="material-symbols-outlined">
+              dataset
+            </span>Dashboard</a></li>
+        <li>
+          <a href="product.html"><span class="material-symbols-outlined">
+              shopping_cart
+            </span>Products</a>
+        </li>
+        <li>
+          <a href="#"><span class="material-symbols-outlined">
+              apps
+            </span>Cetegories</a>
+        </li>
+        <li>
+
+          </span><a href="order.html"><span class="material-symbols-outlined">
+              remove_shopping_cart </span> Order</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="action">
+        <div class="createCetagory">
+          <div class="buttom">
+            <button onclick="addCard()">➕ADD Category</button>
+          </div>
+          <input type="search" placeholder="Search here">
+        </div>
+        <div class="diplay">
+          <div class="containertb">
+            <table>
+              <thead>
+                <tr>
+                  <th>Category ID</th>
+                  <th>Category Name</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+
+            </table>
+          </div>
+
+        </div>
+      </div>
+      <div class="cardCreate" style="display: none;">
+        <div class="title">
+          <h2>CREATE CATEGORY</h2>
+        </div>
+        <div class="iput">
+          <label for="id">Name of category</label>
+          <input type="text" id="name" placeholder="Old name ">
+          <label for="Cetagory">description</label>
+          <input type="text" id="descript" placeholder="Old description">
+        </div>
+        <div class="save">
+          <button onclick="createCard()" id="btnCreate">Create</button>
+          <button onclick="cencel()">Cencel</button>
+        </div>
+      </div>
+    </main>
+</body>
+
+</html>
