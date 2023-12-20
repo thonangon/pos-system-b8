@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+
+<body>
+  <header>
+    <span class="material-symbols-outlined">
+      shopping_cart
+    </span>
+    <h2>POS SYSTEM</h2>
+  </header>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="../index.html"> <span class="material-symbols-outlined">
+              dataset
+            </span>Dashboard</a></li>
+        <li>
+          <a href="#"><span class="material-symbols-outlined">
+              shopping_cart
+            </span>Products</a>
+        </li>
+        <li>
+          <a href="category.html"><span class="material-symbols-outlined">
+              apps
+            </span>Cetegories</a>
+        </li>
+        <li>
+
+          </span><a href="order.html"><span class="material-symbols-outlined">
+              remove_shopping_cart </span> Order</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class=" button-add">
+        <div class="add-product">
+          <span class="material-symbols-outlined">
+            add_circle
+          </span>
+          <button id="click-add">Add Product</button>
+        </div>
+        <div id="choose-product">
+          <h5>Filler by Catigory :</h5>
+          <div>
+            <select id="short-product">
+              <option value="All Category">All Category</option>
+              <!-- <option value="Girl's clothes">Girl's clothes</option>
+              <option value="Boy's clothes">Boy's clothes</option>
+              <option value="Shoes">Shoes</option>
+              <option value="Bags">Bags</option> -->
+
+            </select>
+          </div>
+
+        </div>
+        <div class="search-product">
+          <button><input class="input-search" type="text" placeholder="Enter the position "></button>
+          <span class="material-symbols-outlined">
+            search
+          </span>
+        </div>
+      </div>
+      <button id="update" class="hide">Update</button>
+      <hr>
+      <table>
+        <thead>
+          <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Catergory</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- code js -->
+        </tbody>
+      </table>
+
+
+    </main>
+    <div id="product-dialog" style="display:none;">
+      <dialog open>
+          <header>Create New Product</header>
+          <section>
+              <label>ID product</label>
+              <input id="title" type="text" placeholder="Type your product name" required />
+              <label>Catigory</label>
+              <select id="category">
+                <!-- <option value="Girl's clothes">Girl's clothes</option>
+                <option value="Boy's clothes">Boy's clothes</option>
+                <option value="Shoes">Shoes</option>
+                <option value="Bags">Bags</option> -->
+  
+              </select>
+              <label>Price</label>
+              <input id="price" type="text" placeholder="Pice of your product" required min="1" />
+              <label >Quantity</label>
+              <input id="quantity" type="number" value="1">
+              
+          </section>
+
+          <menu>
+            <button class="cancel" >Cancel</button>
+            <button class="create_Btn" onclick="createBtn()">Create</button>
+            
+          </menu>
+          
+      </dialog>
+    </div>
+  <script src="../JS/product.js"></script>
+</body>
+
+</html>
