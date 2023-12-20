@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+header {
+  background-color: aqua;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+header span {
+  margin-right: 8px;
+}
+
+.container {
+  display: flex;
+}
+
+nav {
+  flex: 1;
+  background-color: black;
+  height: 100vh;
+
+}
+
+main {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  padding: 10px;
+}
+
+li {
+  display: flex;
+}
+
+li a {
+  display: flex;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  height: 50px;
+  width: 200px;
+  margin-top: 15px;
+  border-radius: 7px;
+}
+
+li a {
+  background-color: rgba(0, 255, 255, 0.581);
+}
+
+li a span {
+  margin-right: 10px;
+}
+
+li a:hover {
+
+  box-shadow: rgba(254, 254, 254, 0.11) 0px 54px 55px, rgba(255, 254, 254, 0.396) 0px -12px 30px, rgba(250, 249, 249, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(253, 253, 253, 0.09) 0px -3px 5px;
+  transform: translateY(-1px);
+  background-color: aqua;
+}
+
+/* -----table--------- */
+main {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(225, 245, 220);
+  display: flex;
+  flex-direction: row;
+}
+
+.display_product {
+  flex: 0.6;
+  border-right: 2px solid black;
+
+}
+
+.result {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+table {
+  margin-top: 40px;
+  margin-left: 20px;
+  border-collapse: collapse;
+  height: 40vh;
+  width: 80%;
+}
+
+td,
+th {
+  border: 0.1px solid #bebcbc;
+  padding: 5px;
+  color: rgb(8, 8, 8);
+}
+
+.content-left>table {
+  margin-top: 40px;
+  margin-left: 20px;
+  border-collapse: collapse;
+  height: 40vh;
+  width: 90%;
+}
+
+td,
+th {
+  border: 0.1px solid black;
+  padding: 5px;
+  color: rgb(7, 7, 7);
+}
+
+.research {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.research>input {
+  width: 50%;
+  padding: 6px;
+  border-radius: 20px;
+  text-align: center;
+}
+.content-left{
+  flex: 3;
+  /* background-color: blue; */
+}
+.total{
+  flex: 1;
+  padding-left: 20px;
+  /* background-color: aqua; */
+}
+.total h1{
+  /* color: white; */
+  border: 2px solid aqua;
+  border-radius: 10px;
+  width: 60%;
+  height: 50%;
+  /* background-color: gray; */
+  text-align: center;
+
+}
+
+.prine button{
+  width: 150px;
+  height: 30px;
+  font-size: large;
+  background-color: aqua ;
+}
+.prine button:hover {
+
+  box-shadow: rgba(254, 254, 254, 0.11) 0px 54px 55px, rgba(255, 254, 254, 0.396) 0px -12px 30px, rgba(250, 249, 249, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(253, 253, 253, 0.09) 0px -3px 5px;
+  transform: translateY(-1px);
+  background-color: rgb(255, 3, 3);
+}
+.prine{
+  display: flex;
+  align-items: center;
+  /* background-color: blueviolet; */
+  height: 60px;
+  margin-left: 20px;
+}
+.winth{
+  padding: 5px;
+  width: 50px;
+  height: 40px;
+  font-size: 30px;
+}
